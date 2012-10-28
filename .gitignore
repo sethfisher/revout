@@ -4,3 +4,14 @@ sites/*/settings*.php
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+
+# Ignore everything in the sites directory except the "all", "default", and
+# "example" directories, and example.sites.php.
+sites/*
+!sites/all
+!sites/default
+!sites/example
+!sites/example.sites.php
+
+#Ignore OS generated files
+.DS_Store
