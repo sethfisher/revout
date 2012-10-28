@@ -510,3 +510,19 @@ $conf['404_fast_html'] = '<html xmlns="http://www.w3.org/1999/xhtml"><head><titl
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
+
+/**
+ * This file, default.settings.php, is included by the settings.php found in the
+ * directory of the requested site. We include the settings.[site].inc file in
+ * that directory to provide site and environment specific information necessary
+ * for connecting to the database and preparing other site/env configuration.
+ * 
+ * For instance: a user visits example.com. The settings.php file in the
+ * sites/example file will be used. That file includes this file,
+ * default.settings.php.
+ * That gets us here now, where we include settings.example.inc.
+ */
+$conf_path = conf_path();
+$conf_path_split = explode('/', $conf_path);
+$site_name = array_pop($conf_path_split);
+require_once("$conf_path/settings.$site_name.inc");
