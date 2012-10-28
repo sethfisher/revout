@@ -514,8 +514,8 @@ $conf['404_fast_html'] = '<html xmlns="http://www.w3.org/1999/xhtml"><head><titl
 /**
  * This file, default.settings.php, is included by the settings.php found in the
  * directory of the requested site. We include the settings.[site].inc file in
- * that directory to provide site and environment specific information necessary
- * for connecting to the database and preparing other site/env configuration.
+ * that directory to provide database connection information as well as
+ * environment specific configuration.
  * 
  * For instance: a user visits example.com. The settings.php file in the
  * sites/example file will be used. That file includes this file,
