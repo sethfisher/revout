@@ -1,6 +1,3 @@
-# Ignore configuration files that may contain sensitive information.
-sites/*/settings*.php
-
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
@@ -13,5 +10,5 @@ sites/*
 !sites/example
 !sites/example.sites.php
 
-#Ignore OS generated files
+# Ignore OS generated files
 .DS_Store

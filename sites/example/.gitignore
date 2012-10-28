@@ -1,0 +1,7 @@
+# Ignore the settings.[site].inc file which contains info specific to the local
+# development environment.
+settings.*.inc
+
+# Make an exception for settings.example.inc so it remains included in the
+# RevOut repository.
+!settings.example.inc
