@@ -11,3 +11,10 @@ Files in this directory:
 environment (i.e. db connection details and base url). The included settings are
 Acquia Dev Desktop defaults, so if you're using MAMP or something else, you'll
 have to change these.
+
+# modules/custom/[site]/[site].info
+                        [site].module
+                        [site].install
+
+  - This is the module you should use to manage configuration that is specific
+    to your site.

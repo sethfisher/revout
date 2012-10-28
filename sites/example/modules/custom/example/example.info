@@ -1,0 +1,4 @@
+name = example
+description = Basic functionality for the example site.
+package = RevOut
+core = 7.x
